@@ -390,13 +390,18 @@ section {
   flex-direction: column;
 }
 
+.experience-item p{
+  text-decoration: underline;
+}
+
 .article-container {
   display: grid;
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: left;
+  margin-left: 1.5rem;
 }
 
 article {
@@ -408,6 +413,7 @@ article {
 article .icon {
   cursor: default;
 }
+
 /* CONTACT */
 
 #contact {
