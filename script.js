@@ -6,6 +6,18 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+document.onclick = function (e){
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  if (!menu.contains(e.target) && !icon.contains(e.target)) {
+    menu.classList.remove("open");
+    icon.classList.remove("open");
+  }
+}
+
+// const hamburguer_icon = document.querySelector(".hamburger-icon");
+// const menu_links = document.querySelector(".menu-links");
+
 // Dark / light mode
 
 const btn = document.getElementById("modeToggle");
