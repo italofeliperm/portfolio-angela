@@ -475,9 +475,9 @@ article .icon {
 
 footer {
   height: 26vh;
-  padding-top: 4vh;
-  padding-bottom: 3vh;
+  padding-top: 5vh;
   background-color: black;
+  padding-bottom: 3vh;
 
   .nav-links a {
     color: white;
