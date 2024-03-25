@@ -489,3 +489,18 @@ footer p {
   color: white;
   font-size: x-small;
 }
+
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #7e7e7e;
+  color: #000000;
+  border: none;
+  padding: 10px;
+  border-radius: 30%;
+  cursor: pointer;
+  display: none;
+}

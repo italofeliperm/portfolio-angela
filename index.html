@@ -7,8 +7,31 @@
     <title>Angela Forero Diaz Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!-- Disable caching meta tags -->
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
   </head>
   <body>
+    <button id="scrollToTopBtn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-arrow-up"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8.354 4.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 1 1-.708.708L8.5 5.707V14.5a.5.5 0 0 1-1 0V5.707L3.646 9.354a.5.5 0 1 1-.708-.708l4-4z"
+        />
+      </svg>
+    </button>
+
     <nav id="desktop-nav">
       <div class="logo">Angela Forero Diaz</div>
       <div>
@@ -65,7 +88,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('assets/an-cv-2024.pdf')"
+            onclick="window.open('assets/an-cv-2024.pdf?v=1')"
           >
             DOWNLOAD CV
           </button>

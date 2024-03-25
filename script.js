@@ -24,8 +24,7 @@ const btn = document.getElementById("modeToggle");
 const btn2 = document.getElementById("modeToggle2");
 const themeIcons = document.querySelectorAll(".icon");
 const currentTheme = localStorage.getItem("theme");
-
-if (currentTheme === "dark") {
+if (currentTheme === "dark" || currentTheme == null) {
   setDarkMode();
 }
 
@@ -64,3 +63,22 @@ function setLightMode() {
     icon.src = icon.getAttribute("src-light");
   });
 }
+
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.addEventListener("scroll", function() {
+    // Show/hide button based on scroll position
+    if (window.scrollY > 0) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+});
+
+scrollToTopBtn.addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling animation
+    });
+});
+
